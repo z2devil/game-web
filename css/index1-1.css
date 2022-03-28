@@ -1,0 +1,271 @@
+/*背景封图***********************************************/
+#top-img{
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 0px;
+    overflow: hidden;
+}
+/*正文**************************************************/
+#wrapper{
+    position: relative;
+    display: block;
+    width: 1000px;
+    margin: 400px auto 200px auto;
+    top: 0;
+}
+/*标签盒子************/
+#tab-box{
+    margin: auto;
+    border:27px solid transparent;
+    border-image:url(../image/border.png) 27 27 round;
+}
+/*盒子背景*/
+.tab-background{
+    position: absolute;
+    display: block;
+    z-index: 1;
+    width: 1014px;
+    height: 104px;
+    margin: -34px;
+    top: 28px;
+    background: white;
+    opacity: 0.3;
+}
+/*标签列表块*/
+#tab-list{
+    position: relative;
+    display: block;
+    z-index: 2;
+}
+/*标签列表项*/
+#tab-list li{
+    position: relative;
+    display: inline-block;
+    width: 196px;
+    margin: 0 18px;
+    text-align: center;
+}
+/*列表链接样式*/
+#tab-list .select{
+    text-decoration: none;
+    color: white;
+    text-align:center;
+    padding: 10px 10px;
+    font-size: 24px;
+    text-shadow: black 0 0 20px,black 0 0 10px,black 0 0 5px;
+}
+/*列表链接访问后样式*/
+#tab-list .active{
+    font-size: 28px;
+    color: cyan;
+}
+/*列表标签悬停效果效果*/
+#tab-list a[class="select"]:hover{
+    font-size: 28px;
+    color: cyan;
+}
+#tab-list a{
+    transition: 0.3s;
+}
+/*内容************/
+#container-inner{
+    position: relative;
+    display: block;
+    top: 50px;
+    width: 946px;
+    height: 500px;
+    margin: -18px 0px;
+    border:27px solid transparent;
+    border-image:url(../image/border-s.png) 40 40 round;
+}
+/*盒子背景*/
+.container-background{
+    position: absolute;
+    display: block;
+    z-index: 1;
+    width: 1014px;
+    height: 500px;
+    padding: 32px 0px;
+    margin: -34px;
+    top: 0px;
+    background: white;
+    opacity: 0.3;
+}
+.tab-box{
+    position: relative;
+    display: block;
+    z-index: 5;
+    width: 945px;
+    height: 36px;
+    top: 10px;
+}
+.tag-back{
+    position: absolute;
+    display: block;
+    width: 72px;
+    height: 26px;
+    padding: 4px 5px;
+    margin: 0 17px;
+    left: 0;
+    z-index: -1;
+    background-color: black;
+    border-radius: 20px;
+}
+.info-tag{
+    display: block;
+    width: 105px;
+    height: 26px;
+    padding: 5px;
+    float: left;
+    text-align: center;
+    color: white;
+}
+.info-tag span{
+    font-family: 宋体, serif;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 5px;
+    cursor: pointer;
+    text-shadow: black 0 0 15px,black 0 0 10px,black 0 0 5px;
+}
+.container-part{
+    position: absolute;
+    display: block;
+    z-index: 2;
+    width: 946px;
+    height: 500px;
+    top: 72px;
+    opacity: 0;
+}
+
+.container-first-line{
+    position: absolute;
+}
+.container-title {
+    color: white;
+    font-size: 72px;
+    font-family: 宋体, serif;
+    font-weight: normal;
+    text-shadow: black 0 0 20px,black 0 0 15px,black 0 0 10px,black 0 0 5px;
+}
+.container-number{
+    color: white;
+    font-size: 36px;
+    font-family: "等线 Light", serif;
+    font-weight: lighter;
+    text-shadow: black 0 0 20px,black 0 0 15px,black 0 0 10px,black 0 0 5px;
+}
+.container-hr1{
+    position: absolute;
+    opacity: 0.6;
+    top: 64px;
+    width: 945px;
+    height: 2px
+}
+.container-hr2{
+    position: absolute;
+    opacity: 0.3;
+    top: 86px;
+    width: 640px;
+    height: 1px
+}
+.container-hr3{
+    position: absolute;
+    opacity: 0.3;
+    top: 265px;
+    width: 940px;
+    height: 1px
+}
+.items-img-box{
+    position: absolute;
+    display: block;
+    width: 128px;
+    height: 128px;
+    top: 110px;
+    border: #c3c3c3 solid 2px;
+    box-shadow: black 0 0 20px;
+}
+.items-back{
+    position: absolute;
+    display: block;
+    z-index: 1;
+    width: 128px;
+    height: 128px;
+    top: 0px;
+    background: white;
+    opacity: 0.3;
+}
+.items-img{
+    position: absolute;
+    display: block;
+    width: 128px;
+    height: 128px;
+    z-index: 2;
+}
+/*基础信息*/
+.basic-info{
+    position: absolute;
+    display: flex;
+    top: 110px;
+    left: 148px;
+    color: white;
+    text-shadow: black 0 0 20px,black 0 0 15px,black 0 0 10px,black 0 0 5px;
+    width: 720px;
+    height: 136px;
+}
+.basic-info div{
+    position: relative;
+    display: block;
+    margin: 0 30px 0 10px;
+}
+.basic-info dt{
+    font-family: 宋体, serif;
+    font-size: 20px;
+    line-height: 1.6em;
+    letter-spacing: 0.2em;
+}
+.basic-info dd{
+    font-family: 宋体, serif;
+    font-size: 18px;
+    text-indent: 1em;
+    line-height: 1.3em;
+}
+.basic-info span{
+    letter-spacing: 0.1em;
+    color: cyan;
+}
+
+/*详细信息*/
+.detail-info{
+    position: absolute;
+    display: block;
+    top: 280px;
+    color: white;
+    text-shadow: black 0 0 20px,black 0 0 15px,black 0 0 10px,black 0 0 5px;
+}
+.detail-info dt{
+    font-family: 宋体, serif;
+    font-size: 20px;
+    line-height: 1.6em;
+    letter-spacing: 0.2em;
+}
+.detail-info dd{
+    font-family: 宋体, serif;
+    font-size: 18px;
+    text-indent: 1em;
+    line-height: 1.8em;
+}
+.detail-info span{
+    letter-spacing: 0.3em;
+    border: red dashed 1px;
+}
+.detail-info span:nth-child(1){
+    font-family: 微软雅黑, serif;
+    font-size: 16px;
+    letter-spacing: 0.2em;
+}
+.detail-info span:nth-child(2){
+    letter-spacing: 0.1em;
+    border: 0px;
+}

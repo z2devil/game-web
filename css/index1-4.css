@@ -1,0 +1,75 @@
+/*背景封图***********************************************/
+#top-img{
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 0px;
+    overflow: hidden;
+}
+/*正文**************************************************/
+#wrapper{
+    position: relative;
+    display: block;
+    width: 1000px;
+    margin: 400px auto 200px auto;
+}
+/*标签盒子************/
+#tab-box{
+    /*display: ruby;*/
+    margin: auto;
+    border:27px solid transparent;
+    border-image:url(../image/border.png) 27 27 round;
+}
+/*盒子背景*/
+.tab-background{
+    position: absolute;
+    display: block;
+    z-index: 1;
+    width: 1014px;
+    height: 104px;
+    margin: -34px;
+    top: 28px;
+    background: white;
+    opacity: 0.3;
+}
+/*标签列表块*/
+#tab-list{
+    position: relative;
+    display: block;
+    z-index: 2;
+}
+/*标签列表项*/
+#tab-list li{
+    position: relative;
+    display: inline-block;
+    width: 196px;
+    margin: 0 18px;
+    text-align: center;
+}
+/*列表链接样式*/
+#tab-list .select{
+    text-decoration: none;
+    color: white;
+    text-align:center;
+    padding: 10px 10px;
+    font-size: 24px;
+    text-shadow: black 0 0 20px,black 0 0 10px,black 0 0 5px;
+}
+/*列表链接访问后样式*/
+#tab-list .active{
+    font-size: 28px;
+    color: cyan;
+}
+/*列表链接访问后样式*/
+#tab-list .active{
+    font-size: 28px;
+    color: cyan;
+}
+/*列表标签悬停效果效果*/
+#tab-list a[class="select"]:hover{
+    font-size: 28px;
+    color: cyan;
+}
+#tab-list a{
+    transition: 0.3s;
+}

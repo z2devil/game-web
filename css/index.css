@@ -1,0 +1,315 @@
+/*标题***********************************************/
+#title-logo{
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 14% 14% 1% 14%;
+}
+/*弹出框*******************************************/
+#game-video-play{
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+}
+#game-video-play .video-play{
+    position: relative;
+    display: flex;
+    margin: auto;
+    width: 5%;
+    height: 5%;
+}
+#box-main{
+    position: fixed;
+    z-index: 500;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    opacity: 0;
+    visibility: hidden;
+}
+#esc{
+    position: absolute;
+    display: flex;
+    z-index: 501;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.6;
+    border: 0px;
+}
+#word-box{
+    position: absolute;
+    display: flex;
+    z-index: 502;
+    visibility: hidden;
+}
+#word-inner{
+    position: relative;
+    z-index: 502;
+    box-shadow: 0 0 20px black;
+    background: url("../image/text-back.png") center no-repeat;
+    background-size: 100%;
+}
+#video-box{
+    z-index: 501;
+    visibility: hidden;
+}
+#video-inner{
+    position: relative;
+    display: block;
+    z-index: 502;
+    margin: 10% auto;
+    box-shadow: 0 0 20px black;
+}
+/*视频底部**********************************************/
+#bottom{
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    top: 100px;
+}
+/*正文**************************************************/
+#wrapper{
+    position: relative;
+    display: block;
+}
+
+/*视频*/
+#back-video{
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+}
+#bottom{
+    margin: 5% 0px;
+    height: 100px;
+}
+
+.title{
+    position: relative;
+    text-align: center;
+    z-index: 3;
+    margin-top: 50px;
+}
+/*箭头*/
+#left-arrow{
+    left: 0px;
+    background-image: url("../image/leftarrow.png"););
+}
+#right-arrow{
+    right: 0px;
+    background-image: url("../image/rightarrow.png"););
+}
+.stick-arrow{
+    position: absolute;
+    z-index: 10;
+    width: 42px;
+    height: 42px;
+    top: 170px;
+}
+
+.part{
+    position: relative;
+    display: table;
+    width: 1000px;
+    margin: 50px auto;
+}
+
+/*新闻模块*/
+#news-module{
+    position: relative;
+    padding: 20px 50px 0px 50px;
+}
+#news-list{
+    position: relative;
+    width: 900px;
+    height: 290px;
+    margin: 2% auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+#news-track{
+    position: absolute;
+    width: 15000px;
+    left: -444px;
+    top: 10px;
+}
+
+.news-item{
+    position: relative;
+    display: inline;
+}
+.news-box{
+    position: relative;
+    display: inline-block;
+    width: 450px;
+    height: 270px;
+}
+
+.news-item a{
+    float: left;
+    background: #3F294E;
+    border-radius:10px
+}
+.news-item figure{
+    text-align: center;
+}
+.news-item figure img{
+    width: 425px;
+    border-radius:10px 10px 0px 0px;
+}
+.news-item p{
+    text-align: center;
+}
+/*定位点*/
+.news-dots{
+    position: relative;
+    display: table;
+    margin: -20px auto auto auto;
+}
+.news-dots li{
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    font-weight: 900;
+    color: #BC7BE8;
+}
+/*链接颜色*/
+.news-item a{
+    text-decoration: none;
+    color: snow;
+    font-weight: 100;
+    margin: auto;
+    border: #7E529C solid 2px;
+    transition: 0.3s;
+}
+.news-item a:active,.news-item a:hover{
+    border-color:#BC7BE8;
+    box-shadow: 0 0 10px #BC7BE8,0 0 5px #BC7BE8;
+}
+/*简介*/
+#intro{
+    position: relative;
+    margin: 50px auto;
+}
+#intro-text{
+    position: relative;
+    margin: 20px 50px 20px 50px;
+}
+.paragraph{
+    position: relative;
+    margin: auto;
+    color: snow;
+    font-family: 宋体, serif;
+    font-size: 20px;
+    line-height: 48px;
+    text-shadow: 0 0 20px #BC7BE8, 0 0 15px #BC7BE8, 0 0 10px #BC7BE8, 0 0 10px #BC7BE8;
+    letter-spacing: 2px;
+    text-indent: 2em;
+}
+#intro-more{
+    position: relative;
+    display: table;
+    margin: auto;
+}
+#intro-more-button{
+    width: 42px;
+    height: 42px;
+    background-image: url("../image/read.png"););
+}
+/*特色**************************************************/
+#feature{
+    position: relative;
+    margin: 50px auto;
+}
+.contents{
+    position: relative;
+    margin: 40px 50px 50px 50px;
+}
+.contents+.contents{
+    margin: 98px 50px 50px 50px;
+}
+.inner-box{
+    position: relative;
+    z-index: 2;
+    background-size: 50%;
+    background: url("../image/title_sub_base.png") no-repeat;
+    background-size: 60%;
+    height: 50px;
+    border-left: snow solid 5px;
+}
+.pic-box{
+    position: relative;
+    width: 640px;
+    left: 60px;
+    top: -25px;
+}
+.inner-text{
+    position: relative;
+    top: 3px;
+    left: 5px;
+    color: white;
+    font-size: 36px;
+    font-family: 宋体, serif;
+    text-shadow: 0 0 20px black, 0 0 15px black, 0 0 10px black, 0 0 10px black;
+}
+.text-box{
+    position: relative;
+    z-index: 3;
+    left: 168px;
+    top: -60px;
+}
+.text-box-back{
+    position: absolute;
+    background-size: 50%;
+    background: url("../image/bg_stripe.png");
+    background-size: 9px;
+    width: 720px;
+    height: 96px;
+    opacity: 0.5;
+    border-left: snow solid 5px;
+    box-shadow: 0 0 20px black, 0 0 15px black, 0 0 10px black, 0 0 10px black;
+}
+.text-inbox{
+    position: absolute;
+    z-index: 4;
+    width: 640px;
+    height: 100px;
+    margin: 20px;
+    left: 10px;
+    font-family: "微软雅黑 Light", serif;
+    font-size: 18px;
+    color: #c3c3c3;
+    line-height: 1.6;
+}
+/*制作人员**********************************************/
+#staff-module{
+    position: relative;
+    display: table;
+    margin: auto;
+}
+#staff-text{
+    position: relative;
+    display: table;
+    text-align: center;
+}
+#staff-text p{
+    font-size: 24px;
+    line-height: 4;
+}
+/*感谢**********************************************/
+#thanks-module{
+    position: relative;
+    display: table;
+    margin: 25px auto;
+}
+#thanks-text{
+    position: relative;
+    display: table;
+    text-align: center;
+}
+#thanks-text p{
+    font-size: 18px;
+    text-indent: 0em;
+    line-height: 2;
+}

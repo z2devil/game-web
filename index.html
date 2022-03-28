@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Candela-首页</title>
+    <link href="css/public-style.css" type="text/css" rel="stylesheet">
+    <link href="css/index.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<!--导航栏-->
+<div id="header" style="box-shadow: 0 0 20px #000000;">
+    <div class="header-inner">
+        <!--logo-->
+        <div id="logo">
+            <a href="http://www.baidu.com" target="_blank">
+                <img src="image/logo.png" width="100%" alt="askrseed官网">
+            </a>
+        </div>
+        <div id="login">
+            <a id="login-button" class="login-button" href="index-login.html" target="_self">
+                <span id="user-name">登陆</span>
+                <img id="userImg" class="login-button-img" src="image/login.png">
+            </a>
+            <div id="user-dropdown-box">
+                <ul id="user-dropdown" class="user-dropdown-ul">
+                    <span class="user-dropdown-arrow">▲</span>
+                    <li class="user-dropdown-list"><a>个人中心</a></li>
+                    <li class="user-dropdown-list"><a>我的钱包</a></li>
+                    <li class="user-dropdown-list" id="logout-button"><a>退出登录</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--导航栏列表-->
+        <nav class="top-menu">
+            <ul class="top-menu-ul">
+                <li class="top-menu-li-lv1 selected"><a href="index.html" target="_self" class="select-lv1">首页</a></li>
+                <li class="top-menu-li-lv1" id="dropdown-li1">
+                    <a href="index1-1.html" target="_self" class="select-lv1">资料</a>
+                    <ul class="dropdown" id="dropdown1">
+                        <li class="top-menu-li-lv2"><a href="index1-1.html" target="_self" class="select-lv2">创世录</a></li>
+                        <li class="top-menu-li-lv2"><a href="index1-2.html" target="_self" class="select-lv2">历史书</a></li>
+                        <li class="top-menu-li-lv2"><a href="index1-3.html" target="_self" class="select-lv2">博物馆</a></li>
+                        <li class="top-menu-li-lv2"><a href="index1-4.html" target="_self" class="select-lv2">人物志</a></li>
+                    </ul>
+                </li>
+                <li class="top-menu-li-lv1" id="dropdown-li2">
+                    <a href="index2.html" target="_self" class="select-lv1">下载</a>
+                    <ul class="dropdown" id="dropdown2">
+                        <li class="top-menu-li-lv2"><a href="index2.html" target="_self" class="select-lv2">下载方式</a></li>
+                        <li class="top-menu-li-lv2"><a href="index2.html" target="_self" class="select-lv2">配置要求</a></li>
+                    </ul>
+                </li>
+                <li class="top-menu-li-lv1"><a href="#" target="_self" class="select-lv1">论坛</a></li>
+                <li class="top-menu-li-lv1"><a href="#" target="_self" class="select-lv1">更多</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<!--主要-->
+<div id="wrapper">
+<!--    part 0-->
+    <section id="p0">
+        <!--背景视频-->
+        <video id="back-video" src="movie/w3movie.mp4" width="100%" muted="muted" autoplay="autoplay" loop="loop">
+
+        </video>
+        <!--标题-->
+        <h1 id="title-logo">
+            <img src="image/title.png" width="75%">
+        </h1>
+        <div id="game-video-play">
+            <button class="video-play button" type="button">
+                <img src="image/play.png" width="100%">
+            </button>
+        </div>
+        <!--    弹出页面-->
+        <div id="box-main">
+<!--            返回按键-->
+            <button id="esc" type="button"></button>
+<!--            文档窗口-->
+            <div id="word-box">
+                <iframe id="word-inner" width="40%" height="auto" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true">
+                    <p>
+                        测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试
+                    </p>
+                    <p>
+                        测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试
+                    </p>
+                    <p>
+                        测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试
+                    </p>
+                    <p>
+                        测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试
+                    </p>
+                </iframe>
+            </div>
+<!--            视频窗口-->
+            <div id="video-box">
+                <iframe id="video-inner" width="40%" height="auto" src="//player.bilibili.com/player.html?aid=65995133&bvid=BV1u4411B7VM&cid=114484554&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+            </div>
+        </div>
+        <!--首页底部-->
+        <h1 id="bottom">
+            <img src="image/bottom.png" width="100%">
+        </h1>
+    </section>
+<!--    part 1-->
+    <section id="p1">
+        <div id="news" class="part">
+            <div>
+                <h1 class="title animate-up">
+                    <img src="image/news.png">
+                </h1>
+            </div>
+            <div id="news-module" class="animate-up">
+                <button id="left-arrow" class="stick-arrow button" type="button" style="display: block">previous</button>
+                <button id="right-arrow" class="stick-arrow button" type="button" style="display: block">next</button>
+                <div id="news-list">
+                    <div id="news-track">
+                        <div class="news-item" id="news0">
+                            <div class="news-box">
+                                <a href="#" target="_blank">
+                                    <figure class="news-pic">
+                                        <img src="pic01.jpg">
+                                    </figure>
+                                    <div class="news-text">
+                                        <p>
+                                            第四个第四个第四个第四个
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="news-item" id="news1">
+                            <div class="news-box">
+                                <a href="#" target="_blank">
+                                    <figure class="news-pic">
+                                        <img src="pic01.jpg">
+                                    </figure>
+                                    <div class="news-text">
+                                        <p>
+                                            第一个第一个第一个第一个
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="news-item" id="news2">
+                            <div class="news-box">
+                                <a href="#" target="_blank">
+                                    <figure class="news-pic">
+                                        <img src="pic01.jpg">
+                                    </figure>
+                                    <div class="news-text">
+                                        <p>
+                                            第二个第二个第二个第二个
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="news-item" id="news3">
+                            <div class="news-box">
+                                <a href="#" target="_blank">
+                                    <figure class="news-pic">
+                                        <img src="pic01.jpg">
+                                    </figure>
+                                    <div class="news-text">
+                                        <p>
+                                            第三个第三个第三个第三个
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-dots">
+                    <li>·</li>
+                    <li>·</li>
+                    <li>·</li>
+                    <li>·</li>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--    part 2-->
+    <section id="p2">
+        <div id="intro" class="part">
+            <div>
+                <h1 class="title animate-up">
+                    <img src="image/intro.png">
+                </h1>
+            </div>
+            <div id="intro-module">
+                <div id="intro-text">
+                    <p class="paragraph animate-up">
+                        世界总是在创生与烬灭中循环往复，每个生命的诞生到消亡都是一首史诗。
+                    </p>
+                    <p class="paragraph animate-up">
+                        在这个世界，人类族、矮人族、精灵族、机械族、兽族、海妖族、龙族、恶魔族这八位主角在地球这个大舞台上起舞。
+                    </p>
+                    <p class="paragraph animate-up">
+                        但是神灵族拥有无穷的力量，他们随着世界创生，随着世界消灭。他们是这个世界的主宰，拥有创造和毁灭世界的力量。他们为了统治和拥有世界进而创造了世界沙漏，每到世界沙漏旋转的时候，世界上的除了世界沙漏其他所有的事物都会重置，所有的一切都会从超古世界开始发展。
+                    </p>
+                    <p class="paragraph animate-up">
+                        在重置了不知道多少次的今天，异常出现了……
+                    </p>
+                </div>
+                <div id="intro-more" class="animate-up">
+                    <button id="intro-more-button" class="word-play button" type="button" style="display: block">more</button>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--    part 3-->
+    <section id="p3">
+        <div id="feature" class="part">
+            <div>
+                <h1 class="title animate-up">
+                    <img src="image/feature.png">
+                </h1>
+            </div>
+            <div id="feature-module">
+                <div class="contents animate-up">
+                    <div class="inner">
+                        <div class="inner-box animate-right">
+                            <h2 class="inner-text">
+                                像素风格 清新脱俗
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="pic-box">
+                        <img src="image/f1.png">
+                    </div>
+                    <div class="text-box">
+                        <p class="text-inbox animate-up-s">
+                            不拉不拉不拉不拉不拉不拉不拉不，拉不拉不拉不拉不拉不拉不拉。不拉不拉不拉，不拉不拉不拉不拉不拉不拉不拉。
+                        </p>
+                        <div class="text-box-back animate-left"></div>
+                    </div>
+                </div>
+                <div class="contents animate-up">
+                    <div class="inner">
+                        <div class="inner-box animate-right">
+                            <h2 class="inner-text">
+                                无限世界，沙盒生存
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="pic-box">
+                        <img src="image/f2.png">
+                    </div>
+                    <div class="text-box">
+                        <p class="text-inbox animate-up-s">
+                            不拉不拉不拉不拉不拉不拉不拉不，拉不拉不拉不拉不拉不拉不拉。不拉不拉不拉，不拉不拉不拉不拉不拉不拉不拉。
+                        </p>
+                        <div class="text-box-back animate-left"></div>
+                    </div>
+                </div>
+                <div class="contents animate-up">
+                    <div class="inner">
+                        <div class="inner-box animate-right">
+                            <h2 class="inner-text">
+                                众生相，极力描绘每个人物
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="pic-box">
+                        <img src="image/f4.png">
+                    </div>
+                    <div class="text-box">
+                        <p class="text-inbox animate-up-s">
+                            不拉不拉不拉不拉不拉不拉不拉不，拉不拉不拉不拉不拉不拉不拉。不拉不拉不拉，不拉不拉不拉不拉不拉不拉不拉。
+                        </p>
+                        <div class="text-box-back animate-left"></div>
+                    </div>
+                </div>
+                <div class="contents animate-up">
+                    <div class="inner">
+                        <div class="inner-box animate-right">
+                            <h2 class="inner-text">
+                                多结局，完全依靠玩家选择
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="pic-box">
+                        <img src="image/f5.png">
+                    </div>
+                    <div class="text-box">
+                        <p class="text-inbox animate-up-s">
+                            不拉不拉不拉不拉不拉不拉不拉不，拉不拉不拉不拉不拉不拉不拉。不拉不拉不拉，不拉不拉不拉不拉不拉不拉不拉。
+                        </p>
+                        <div class="text-box-back animate-left"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--    part 4-->
+    <section id="p4">
+        <div id="staff" class="part">
+            <div>
+                <h1 class="title animate-up">
+                    <img src="image/staff.png">
+                </h1>
+            </div>
+            <div id="staff-module">
+                <div id="staff-text">
+                    <p class="paragraph animate-up">
+                        策划 Linker
+                    </p>
+                    <p class="paragraph animate-up">
+                        剧本 Linker
+                    </p>
+                    <p class="paragraph animate-up">
+                        图像 Linker
+                    </p>
+                    <p class="paragraph animate-up">
+                        音乐 more
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    part 5-->
+    <section id="p5">
+        <div id="thanks" class="part">
+            <div>
+                <h1 class="title animate-up">
+                    <img src="image/thanks.png">
+                </h1>
+            </div>
+            <div id="thanks-module" class="animate-up">
+                <div id="thanks-text">
+                    <p class="paragraph">
+                        不拉不拉不拉不拉不拉不拉不拉不拉不拉不拉不拉
+                    </p>
+                    <p class="paragraph">
+                        不拉不拉不拉不拉不拉不拉不拉不拉
+                    </p>
+                    <p class="paragraph">
+                        不拉不拉不拉不拉不拉
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</div>
+<!--回到顶部-->
+<div id="pageTop">
+    <a href="#wrapper" class="button">
+        <img src="image/top_btn.png" width="64px">
+    </a>
+</div>
+<!--底部-->
+<footer id="footer">
+    <div id="spec">
+        <div id="spec-inner">
+            <h1 id="spec-name">
+                Candela
+            </h1>
+            <section id="spec-section">
+                <div class="spec-cell">
+                    <dl class="spec-text">
+                        <dt>
+                            对战平台：
+                        </dt>
+                        <dd>
+                            PlayStation®4 / Steam
+                        </dd>
+                    </dl>
+                    <dl class="spec-text">
+                        <dt>
+                            发售日：
+                        </dt>
+                        <dd>
+                            预计2020年7月发售
+                        </dd>
+                    </dl>
+                </div>
+                <div class="spec-cell">
+                    <dl class="spec-text">
+                        <dt>
+                            对应人数：
+                        </dt>
+                        <dd>
+                            1人(网络联机时：最多4人)
+                        </dd>
+                    </dl>
+                    <dl class="spec-text">
+                        <dt>
+                            类型：
+                        </dt>
+                        <dd>
+                            角色扮演
+                        </dd>
+                    </dl>
+                </div>
+                <div class="spec-cell">
+<!--                    <nobr>-->
+                        <dl class="spec-text">
+                            <dt>
+                                游戏级别：
+                            </dt>
+                            <dd>
+                                辅15
+                            </dd>
+                        </dl>
+<!--                    </nobr>-->
+                </div>
+            </section>
+        </div>
+
+    </div>
+    <h1>
+        <ul id="product-logo">
+            <li>
+                <img src="https://www.monsterhunter.com/common/logo/tmp/psf_b.png" height="28">
+            </li>
+            <li>
+                <img src="https://www.monsterhunter.com/common/logo/tmp/ps4_b.png" height="17">
+            </li>
+            <li>
+                <img src="https://www.monsterhunter.com/common/logo/tmp/steam_b.png" height="24">
+            </li>
+        </ul>
+    </h1>
+    <h5 class="footer-text">
+        <p>
+            PlayStation family logo mark"PlayStation" andPlayStation 4 logoare registered trademarks or trademarks of Sony Interactive Entertainment Inc.
+            ©Valve Corporation. Steam and the Steam logo are trademarks and/or registered trademarks of Valve Corporation in the U.S. and/or other countries.
+        </p>
+    </h5>
+    <hr>
+    <h1>
+        <div id="small-logo">
+            <a href="http://www.baidu.com" target="_blank">
+                <img src="image/logo.png" width="150px" alt="askrseed官网">
+            </a>
+        </div>
+    </h1>
+    <h5 class="footer-text inscribe">
+        <p>
+            ©CAPCOM CO., LTD. 2018, 2019 ALL RIGHTS RESERVED.
+        </p>
+    </h5>
+</footer>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/public-js.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
